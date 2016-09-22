@@ -61,6 +61,207 @@ $primary_nav = array(
         'url'   => 'separator',
     ),
     array(
+        'name'  => 'Perfil do Projeto',
+        'icon'  => 'fa fa-rocket',
+        'url'   => 'page_project_profile.php'
+    ),
+    array(
+        'name'  => 'Components',
+        'icon'  => 'gi gi-airplane',
+        'sub'   => array(
+            array(
+                'name'  => 'To-do List',
+                'url'   => 'page_comp_todo.php',
+            ),
+            array(
+                'name'  => 'Gallery',
+                'url'   => 'page_comp_gallery.php',
+            ),
+            array(
+                'name'  => 'Google Maps',
+                'url'   => 'page_comp_maps.php',
+            ),
+            array(
+                'name'  => 'Calendar',
+                'url'   => 'page_comp_calendar.php',
+            ),
+            array(
+                'name'  => 'Charts',
+                'url'   => 'page_comp_charts.php',
+            ),
+            array(
+                'name'  => 'CSS3 Animations',
+                'url'   => 'page_comp_animations.php',
+            ),
+            array(
+                'name'  => 'Tree View Lists',
+                'url'   => 'page_comp_tree.php',
+            ),
+            array(
+                'name'  => 'Nestable &amp; Sortable Lists',
+                'url'   => 'page_comp_nestable.php',
+            )
+        )
+    ),
+    array(
+        'name'  => 'UI Layouts',
+        'icon'  => 'gi gi-more_items',
+        'sub'   => array(
+            array(
+                'name'  => 'Static',
+                'url'   => 'page_layout_static.php'
+            ),
+            array(
+                'name'  => 'Static Fixed Width',
+                'url'   => 'page_layout_static_fixed_width.php'
+            ),
+            array(
+                'name'  => 'Top Header (Fixed)',
+                'url'   => 'page_layout_fixed_top.php'
+            ),
+            array(
+                'name'  => 'Bottom Header (Fixed)',
+                'url'   => 'page_layout_fixed_bottom.php'
+            ),
+            array(
+                'name'  => 'Sidebar Mini (Static)',
+                'url'   => 'page_layout_static_sidebar_mini.php'
+            ),
+            array(
+                'name'  => 'Sidebar Mini (Fixed)',
+                'url'   => 'page_layout_fixed_sidebar_mini.php'
+            ),
+            array(
+                'name'  => 'Visible Alternative Sidebar',
+                'url'   => 'page_layout_alternative_sidebar_visible.php'
+            )
+        )
+    ),
+    array(
+        'name'  => 'Extra Pages',
+        'icon'  => 'fa fa-gift',
+        'sub'   => array(
+            array(
+                'name'  => 'Base',
+                'sub'   => array(
+                    array(
+                        'name'  => 'Blank',
+                        'url'   => 'page_ready_blank.php'
+                    ),
+                    array(
+                        'name'  => 'Error',
+                        'url'   => 'page_ready_error.php'
+                    ),
+                    array(
+                        'name'  => 'Search Results (5)',
+                        'url'   => 'page_ready_search_results.php'
+                    ),
+                    array(
+                        'name'  => 'FAQ',
+                        'url'   => 'page_ready_faq.php'
+                    ),
+                    array(
+                        'name'  => 'Invoice',
+                        'url'   => 'page_ready_invoice.php'
+                    )
+                )
+            ),
+            array(
+                'name'  => 'Web Application',
+                'sub'   => array(
+                    array(
+                        'name'  => 'User Profile',
+                        'url'   => 'page_ready_profile.php'
+                    ),
+                    array(
+                        'name'  => 'Forum (3)',
+                        'url'   => 'page_ready_forum.php'
+                    ),
+                    array(
+                        'name'  => 'Pricing Tables',
+                        'url'   => 'page_ready_pricing_tables.php'
+                    ),
+                    array(
+                        'name'  => 'Article',
+                        'url'   => 'page_ready_article.php'
+                    ),
+                    array(
+                        'name'  => 'Timeline',
+                        'url'   => 'page_ready_timeline.php'
+                    ),
+                    array(
+                        'name'  => 'Contacts',
+                        'url'   => 'page_ready_contacts.php'
+                    ),
+                    array(
+                        'name'  => 'Tickets',
+                        'url'   => 'page_ready_tickets.php'
+                    )
+                )
+            ),
+            array(
+                'name'  => 'Login, Register &amp; Lock',
+                'sub'   => array(
+                    array(
+                        'name'  => 'Login',
+                        'url'   => 'page_ready_login.php'
+                    ),
+                    array(
+                        'name'  => 'Login 2',
+                        'url'   => 'page_ready_login2.php'
+                    ),
+                    array(
+                        'name'  => 'Password Reminder',
+                        'url'   => 'page_ready_reminder.php'
+                    ),
+                    array(
+                        'name'  => 'Register',
+                        'url'   => 'page_ready_register.php'
+                    ),
+                    array(
+                        'name'  => 'Lock Screen',
+                        'url'   => 'page_ready_lock_screen.php'
+                    )
+                )
+            )
+        )
+    ),
+    array(
+        'url'   => 'separator',
+    ),
+    array(
+        'name'  => 'Email Center',
+        'icon'  => 'gi gi-inbox',
+        'url'   => 'page_app_email.php'
+    ),
+    array(
+        'name'  => 'Social Net',
+        'icon'  => 'fa fa-share-alt',
+        'url'   => 'page_app_social.php'
+    ),
+    array(
+        'name'  => 'Media Box',
+        'icon'  => 'gi gi-picture',
+        'url'   => 'page_app_media.php'
+    ),
+    array(
+        'name'  => 'eStore',
+        'icon'  => 'gi gi-shopping_cart',
+        'url'   => 'page_app_estore.php'
+    )
+);
+
+/* Primary navigation array (the primary navigation will be created automatically based on this array, up to 3 levels deep) */
+$primary_nav_bkp = array(
+    array(
+        'name'  => 'Dashboard',
+        'url'   => 'index.php',
+        'icon'  => 'gi gi-compass'
+    ),
+    array(
+        'url'   => 'separator',
+    ),
+    array(
         'name'  => 'User Interface',
         'icon'  => 'fa fa-rocket',
         'sub'   => array(

@@ -1,4 +1,5 @@
 <?php include 'inc/config.php'; ?>
+<?php include 'inc/config.php'; ?>
 <?php include 'inc/template_start.php'; ?>
 
 <!-- Login Container -->

@@ -4,8 +4,11 @@
 <!-- Login Container -->
 <div id="login-container">
     <!-- Login Header -->
+    <div class="text-center">
+        <img src="img/logo.png"></img>
+    </div>
     <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
-        <i class="fa fa-cube"></i> <strong>Bem vindo ao Vamos Captar</strong>
+        <strong>Bem vindo ao Vamos Captar</strong>
     </h1>
     <!-- END Login Header -->
 

@@ -34,13 +34,6 @@
         </li>
         <!-- END Main Sidebar Toggle Button -->
 
-        <?php if ($template['header_link']) { ?>
-        <!-- Header Link -->
-        <li class="hidden-xs animation-fadeInQuick">
-            <a href=""><strong><?php echo $template['header_link']; ?></strong></a>
-        </li>
-        <!-- END Header Link -->
-        <?php } ?>
     </ul>
     <!-- END Left Header Navigation -->
 
@@ -49,7 +42,7 @@
         <!-- Search Form -->
         <li>
             <form action="page_ready_search_results.php" method="post" class="navbar-form-custom">
-                <input type="text" id="top-search" name="top-search" class="form-control" placeholder="Search..">
+                <input type="text" id="top-search" name="top-search" class="form-control" placeholder="Pesquisar...">
             </form>
         </li>
         <!-- END Search Form -->
