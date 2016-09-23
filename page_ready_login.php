@@ -1,4 +1,9 @@
-<?php include 'inc/config.php'; ?>
+<?php 
+
+include 'inc/config.php'; 
+$_SESSION["profile"] = null;
+
+?>
 <?php include 'inc/template_start.php'; ?>
 
 <!-- Login Container -->
