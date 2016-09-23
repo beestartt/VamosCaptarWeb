@@ -46,7 +46,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
-        <?php if ($template['theme']) { ?><link rel="stylesheet" href="css/themes/<?php echo $template['theme']; ?>.css" id="theme-link"><?php } ?>
+        <link rel="stylesheet" href="css/themes/social.css" id="theme-link">
 
         <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
         <link rel="stylesheet" href="css/themes.css">

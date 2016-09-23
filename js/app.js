@@ -29,9 +29,6 @@ var App = function() {
         sidebarAlt      = $('#sidebar-alt');
         sScrollAlt      = $('#sidebar-scroll-alt');
 
-        // Color Theme Preview functionality
-        colorThemePreview();
-
         // Initialize sidebars functionality
         handleSidebar('init');
 
@@ -445,100 +442,6 @@ var App = function() {
         }
     };
 
-    /* Color Theme preview, preview a color theme on a page */
-    var colorThemePreview = function() {
-        var colorList       = $('.sidebar-themes');
-        var themeLink       = $('#theme-link');
-
-        var themeColor      = themeLink.length ? themeLink.attr('href') : 'default';
-        var themeHeader     = header.hasClass('navbar-inverse') ? 'navbar-inverse' : 'navbar-default';
-        var themeSidebar    = page.hasClass('sidebar-light') ? 'sidebar-light' : '';
-
-        var cookies         = page.hasClass('enable-cookies') ? true : false;
-        var themeColorCke, themeHeaderCke, themeSidebarCke;
-
-        // If cookies have been enabled
-        if (cookies) {
-            themeColorCke   = Cookies.get('optionThemeColor') ? Cookies.get('optionThemeColor') : false;
-            themeHeaderCke  = Cookies.get('optionThemeHeader') ? Cookies.get('optionThemeHeader') : false;
-            themeSidebarCke = Cookies.get('optionThemeSidebar') ? Cookies.get('optionThemeSidebar') : false;
-
-            // Update navbar class
-            themeHeaderCke ? header.removeClass('navbar-inverse navbar-default').addClass(themeHeaderCke) : false;
-
-            // Update sidebar class
-            themeSidebarCke ? page.removeClass('sidebar-light').addClass(themeSidebarCke) : false;
-
-            // Update color theme
-            if (themeColorCke) {
-                if (themeColorCke === 'default') {
-                    if (themeLink.length) {
-                        themeLink.remove();
-                        themeLink = $('#theme-link');
-                    }
-                } else {
-                    if (themeLink.length) {
-                        themeLink.attr('href', themeColorCke);
-                    } else {
-                        $('link[href="css/themes.css"]')
-                            .before('<link id="theme-link" rel="stylesheet" href="' + themeColorCke + '">');
-
-                        themeLink = $('#theme-link');
-                    }
-                }
-            }
-
-            themeColor      = themeColorCke ? themeColorCke : themeColor;
-            themeHeader     = themeHeaderCke ? themeHeaderCke : themeHeader;
-            themeSidebar    = themeSidebarCke ? themeSidebarCke : themeSidebar;
-        }
-
-        // Set the active color theme link as active
-        $('a[data-theme="' + themeColor + '"][data-theme-navbar="' + themeHeader + '"][data-theme-sidebar="' + themeSidebar + '"]', colorList)
-            .parent('li')
-            .addClass('active');
-
-        // When a color theme link is clicked
-        $('a', colorList).click(function(e){
-            themeColor      = $(this).data('theme');
-            themeHeader     = $(this).data('theme-navbar');
-            themeSidebar    = $(this).data('theme-sidebar');
-
-            // Set this color theme link as active
-            $('li', colorList).removeClass('active');
-            $(this).parent('li').addClass('active');
-
-            // Update navbar class
-            header.removeClass('navbar-inverse navbar-default').addClass(themeHeader);
-
-            // Update sidebar class
-            page.removeClass('sidebar-light').addClass(themeSidebar);
-
-            // Update color theme
-            if (themeColor === 'default') {
-                if (themeLink.length) {
-                    themeLink.remove();
-                    themeLink = $('#theme-link');
-                }
-            } else {
-                if (themeLink.length) {
-                    themeLink.attr('href', themeColor);
-                } else {
-                    $('link[href="css/themes.css"]')
-                        .before('<link id="theme-link" rel="stylesheet" href="' + themeColor + '">');
-
-                    themeLink = $('#theme-link');
-                }
-            }
-
-            // If cookies have been enabled, save the new options
-            if (cookies) {
-                Cookies.set('optionThemeColor', themeColor, {expires: 7});
-                Cookies.set('optionThemeHeader', themeHeader, {expires: 7});
-                Cookies.set('optionThemeSidebar', themeSidebar, {expires: 7});
-            }
-        });
-    };
 
     /* Datatables basic Bootstrap integration (pagination integration included under the Datatables plugin in plugins.js) */
     var dtIntegration = function() {
