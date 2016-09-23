@@ -15,14 +15,14 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="header-section">
-                    <h1>Perfil do Projeto</h1>
+                    <h1>Fontes de Captação</h1>
                 </div>
             </div>
             <div class="col-sm-6 hidden-xs">
                 <div class="header-section">
                     <ul class="breadcrumb breadcrumb-top">
                         <li>Vamos Captar</li>
-                        <li><a href="">Perfil do Projeto</a></li>
+                        <li><a href="">Fontes de Captação</a></li>
                     </ul>
                 </div>
             </div>

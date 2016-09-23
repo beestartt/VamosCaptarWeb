@@ -66,6 +66,16 @@ $primary_nav = array(
         'url'   => 'page_project_profile.php'
     ),
     array(
+        'name'  => 'Fontes de Captação',
+        'icon'  => 'gi gi-airplane',
+        'url'   => 'page_captation_fonts.php'
+    ),
+    array(
+        'name'  => 'Contratar Consultor',
+        'icon'  => 'fa fa-user',
+        'url'   => 'page_consultant_hire.php'
+    ),
+    array(
         'name'  => 'Components',
         'icon'  => 'gi gi-airplane',
         'sub'   => array(
