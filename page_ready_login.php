@@ -4,9 +4,6 @@
 <!-- Login Container -->
 <div id="login-container">
     <!-- Login Header -->
-    <div class="text-center">
-        <img src="img/logo.png"></img>
-    </div>
     <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
         <strong>Bem vindo ao Vamos Captar</strong>
     </h1>
@@ -25,7 +22,7 @@
         <!-- END Login Title -->
 
         <!-- Login Form -->
-        <form id="form-login" action="index.php" method="post" class="form-horizontal">
+        <form id="form-login" action="functions/check_login.php" method="post" class="form-horizontal">
             <div class="form-group">
                 <div class="col-xs-12">
                     <input type="text" id="login-email" name="login-email" class="form-control" placeholder="Seu e-mail...">
