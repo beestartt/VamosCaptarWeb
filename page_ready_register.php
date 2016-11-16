@@ -6,7 +6,7 @@
 <div id="login-container">
     <!-- Register Header -->
     <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
-        <i class="fa fa-plus"></i> <strong>Create Account</strong>
+        <i class="fa fa-plus"></i> <strong>Criar Conta</strong>
     </h1>
     <!-- END Register Header -->
 
@@ -17,7 +17,7 @@
             <div class="block-options pull-right">
                 <a href="page_ready_login.php" class="btn btn-effect-ripple btn-primary" data-toggle="tooltip" data-placement="left" title="Back to login"><i class="fa fa-user"></i></a>
             </div>
-            <h2>Register</h2>
+            <h2>Cadastrar</h2>
         </div>
         <!-- END Register Title -->
 
@@ -25,22 +25,22 @@
         <form id="form-register" action="page_ready_register.php" method="post" class="form-horizontal">
             <div class="form-group">
                 <div class="col-xs-12">
-                    <input type="text" id="register-username" name="register-username" class="form-control" placeholder="Username">
+                    <input type="text" id="register-username" name="register-username" class="form-control" placeholder="Nome de Usuário">
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-xs-12">
-                    <input type="text" id="register-email" name="register-email" class="form-control" placeholder="Email">
+                    <input type="text" id="register-email" name="register-email" class="form-control" placeholder="E-mail">
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-xs-12">
-                    <input type="password" id="register-password" name="register-password" class="form-control" placeholder="Password">
+                    <input type="password" id="register-password" name="register-password" class="form-control" placeholder="Senha">
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-xs-12">
-                    <input type="password" id="register-password-verify" name="register-password-verify" class="form-control" placeholder="Verify Password">
+                    <input type="password" id="register-password-verify" name="register-password-verify" class="form-control" placeholder="Confirme sua senha">
                 </div>
             </div>
             <div class="form-group form-actions">
@@ -49,10 +49,10 @@
                         <input type="checkbox" id="register-terms" name="register-terms">
                         <span></span>
                     </label>
-                    <a href="#modal-terms" data-toggle="modal">Terms</a>
+                    <a href="#modal-terms" data-toggle="modal">Termos</a>
                 </div>
                 <div class="col-xs-6 text-right">
-                    <button type="submit" class="btn btn-effect-ripple btn-success"><i class="fa fa-plus"></i> Create Account</button>
+                    <button type="submit" class="btn btn-effect-ripple btn-success"><i class="fa fa-plus"></i> Criar Conta</button>
                 </div>
             </div>
         </form>

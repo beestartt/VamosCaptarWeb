@@ -1,9 +1,7 @@
 <?php include 'inc/config.php'; $template['header_link'] = 'WELCOME'; ?>
 <?php include 'inc/template_start.php'; ?>
 <?php include 'inc/page_head.php'; ?>
-<?php
-    $_SESSION["profile"] = "entreapeneur";
-?>
+
 
 <!-- Page content -->
 <div id="page-content">
